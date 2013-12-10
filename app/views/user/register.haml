@@ -1,27 +1,44 @@
-=form_for(@user,:url => 'register') do |u|
-  .form-group(style="width:600px;padding:50px 50px 20px 50px;width:50% ;margin:auto auto")
-    %h4
-      新用户注册
-    %div(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px" )
-      =link_to "用户登录",index_path
-  .input-group(style="margin:auto" )
-    =u.label :'帐号',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :name,:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'请设置密码',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :password,:type =>'password',:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'请确认密码',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :password_confirmation,:type =>'password',:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'忘记密码问题',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :question,:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'忘记密码答案',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :answer,:class =>'form-control',:style =>'width:450px'
-  - if @user.errors.any?
+%fieldset(style="width:600px;width:50% ;margin:auto auto")
+  %legend
+    新用户注册
+  =form_for(:user,:url => 'register') do |form|
+    .form-group
+      %div(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px" )
+        =link_to "用户登录",index_path
+    -#.input-group(style="margin:auto" )
+    -#  =u.label :'帐号',:class =>'input-group-addon text-center',:style =>'width:120px'
+    -#  =u.text_field :name,:class =>'form-control',:style =>'width:450px'
+    -#.input-group(style="margin:20px auto auto auto" )
+    -#  =u.label :'请设置密码',:class =>'input-group-addon text-center',:style =>'width:120px'
+    -#  =u.text_field :password,:type =>'password',:class =>'form-control',:style =>'width:450px'
+    -#.input-group(style="margin:20px auto auto auto" )
+    -#  =u.label :'请确认密码',:class =>'input-group-addon text-center',:style =>'width:120px'
+    -#  =u.text_field :password_confirmation,:type =>'password',:class =>'form-control',:style =>'width:450px'
+    -#.input-group(style="margin:20px auto auto auto" )
+    -#  =form.label :'忘记密码问题',:class =>'input-group-addon text-center',:style =>'width:120px'
+    -#  =form.text_field :question,:class =>'form-control',:style =>'width:450px'
+    -#.input-group(style="margin:20px auto auto auto" )
+    -#  =form.label :'忘记密码答案',:class =>'input-group-addon text-center',:style =>'width:120px'
+    -#  =form.text_field :answer,:class =>'form-control',:style =>'width:450px'
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"name",
+                                                             :field_title=>'帐号'}
+    =render :partial => "layouts/password_field_row",:locals => {:form=>form,
+                                                                 :field=>"password",
+                                                                 :field_title=>"密码"}
+    =render :partial => "layouts/password_field_row",:locals => {:form=>form,
+                                                                 :field=>"password_confirmation",
+                                                                 :field_title=>"确认密码"}
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"question",
+                                                             :field_title=>'找回密码问题'}
+
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"answer",
+                                                             :field_title=>'找回密码答案'}
+    - if @user.errors.any?
+      .text-center
+        %label(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
+          =@user.errors.full_messages.first
     .text-center
-      %label(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
-        =@user.errors.full_messages.first
-  .text-center
-    =u.submit :'注册',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'
+      =form.submit :'注册',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'

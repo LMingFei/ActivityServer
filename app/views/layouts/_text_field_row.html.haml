@@ -1,0 +1,3 @@
+.input-group(style="margin:20px auto auto auto" )
+  =form.label field_title||field.humanize,:for=>field,:class =>'input-group-addon text-center',:style =>'width:120px'
+  =form.text_field field,:class =>'form-control',:style =>'width:450px',:size=>User::NAME_SIZE,:maxlength=>User::NAME_MAX_LENGTH

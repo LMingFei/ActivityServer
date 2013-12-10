@@ -1,23 +1,19 @@
 class ManagerController < ApplicationController
   def manager_logined
-    if cookies.permanent[:token]
-      if cookies.permanent[:token].empty?
-        @users=User.where("id>0").order("created_at").paginate(page:params[:page],:per_page=>'4')
-        if params[:id]
-          @delete_user=User.find_by_id(params[:id])
-          respond_to do |format|
-          if @delete_user.destroy
-              params[:id]=nil
-              format.html{redirect_to manager_logined_path}
-              format.js
+    if IsAdmin?
+      @users=User.where("id>0").order("created_at").paginate(page:params[:page],:per_page=>'4')||User.new
+      if params[:id]
+        @delete_user=User.find_by_id(params[:id])
+        respond_to do |format|
+        if @delete_user.destroy
+            params[:id]=nil
+            format.html{redirect_to manager_logined_path}
+            format.js
 
-          else
-            format.html
-            end
+        else
+          format.html
           end
         end
-      else
-        redirect_to root_url
       end
     else
       redirect_to root_url

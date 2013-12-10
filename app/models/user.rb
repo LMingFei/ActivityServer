@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
     session[:user_id]=self.id
   end
 
-  def self.logout!(session)
+  def logout!(session)
     session[:user_id]=nil
     flash[:notice]="Logged out"
     redirect_to :action=>"index",:controller=>""
@@ -45,7 +45,7 @@ class User < ActiveRecord::Base
     self.password=nil
   end
 
-  def logged_in?
+  def self.logged_in?(session)
     session[:user_id]
   end
 end
