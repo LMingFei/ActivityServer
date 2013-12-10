@@ -1,4 +1,8 @@
+#encoding: utf-8
 class ManagerController < ApplicationController
+
+  before_filter :protect
+
   def manager_logined
     if IsAdmin?
       @users=User.where("id>0").order("created_at").paginate(page:params[:page],:per_page=>'4')||User.new
@@ -16,7 +20,7 @@ class ManagerController < ApplicationController
         end
       end
     else
-      redirect_to root_url
+      redirect_to '/index'
     end
   end
 
@@ -42,7 +46,6 @@ class ManagerController < ApplicationController
 
 
   def destroy_user
-    puts '========================================================='
   end
 
 
@@ -71,4 +74,13 @@ private
     params.require(:user).permit(:name, :password, :question,:answer,:password_confirmation)
   end
 
+  def protect
+
+    unless User.logged_in?(session)
+      #session[:protected_page]=request.request_uri
+      flash[:notice]="请先登录"
+      redirect_to '/index'
+      return false
+    end
+  end
 end

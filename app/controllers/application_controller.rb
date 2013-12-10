@@ -11,5 +11,8 @@ class ApplicationController < ActionController::Base
     current_user.authority=="admin"
   end
 
+
+
+
   helper_method :current_user,:IsAdmin?
 end

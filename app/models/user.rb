@@ -32,13 +32,11 @@ class User < ActiveRecord::Base
   end
 
   def login!(session)
-    session[:user_id]=self.id
+    session[:token]=self.token
   end
 
-  def logout!(session)
-    session[:user_id]=nil
-    flash[:notice]="Logged out"
-    redirect_to :action=>"index",:controller=>""
+  def self.logout!(session)
+    session[:token]=nil
   end
 
   def clear_password!
@@ -46,7 +44,7 @@ class User < ActiveRecord::Base
   end
 
   def self.logged_in?(session)
-    session[:user_id]
+    session[:token]
   end
 end
 
