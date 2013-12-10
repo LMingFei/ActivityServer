@@ -50,7 +50,6 @@ class ManagerController < ApplicationController
 
 
   def edit_user
-
     @user=User.find_by_id(params[:id])
   end
 
@@ -60,8 +59,7 @@ class ManagerController < ApplicationController
     @user.password_confirmation=params[:user][:password_confirmation]
     respond_to do |format|
       if @user.update(password:@user.password)
-        format.html { redirect_to root_url}
-        reset_session
+        format.html { redirect_to '/manager_logined'}
       else
         format.html { render action: '/edit_user'}
       end

@@ -50,7 +50,11 @@ class UserController < ApplicationController
   end
 
   def user_logined
+    unless IsAdmin?
 
+    else
+      redirect_to '/manager_logined'
+    end
   end
 
   def logout

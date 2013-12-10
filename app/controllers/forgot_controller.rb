@@ -59,8 +59,6 @@ class ForgotController < ApplicationController
 
   def forgot3_post
     if session[:Back_token]
-      puts '================================================='
-
       @user=User.find_by_token(session[:Back_token])
       @user.password=params[:user][:password]
       @user.password_confirmation=params[:user][:password_confirmation]

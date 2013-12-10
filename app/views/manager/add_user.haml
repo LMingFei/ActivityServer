@@ -1,32 +1,30 @@
-
-%ul(class="breadcrumb")
-  %li
-    %a(href="manager_logined")
-      首页
-  %li(class="active")
+=render :partial =>"layouts/crubs_nav",:locals => {:field=>'添加用户'}
+%fieldset(style="width:600px;width:50% ;margin:auto auto")
+  %legend
     添加用户
-=form_for(@user,:url => 'add_user') do |u|
-  .form-group(style="width:600px;padding:50px 50px 20px 50px;width:50% ;margin:auto auto")
-    %h4
-      添加用户
-  .input-group(style="margin:auto" )
-    =u.label :'帐号',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :name,:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'请设置密码',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :password,:type =>'password',:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'请确认密码',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :password_confirmation,:type =>'password',:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'忘记密码问题',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :question,:class =>'form-control',:style =>'width:450px'
-  .input-group(style="margin:20px auto auto auto" )
-    =u.label :'忘记密码答案',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :answer,:class =>'form-control',:style =>'width:450px'
-  - if @user.errors.any?
-    .text-center
-      %label(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
-        =@user.errors.full_messages.first
-  .text-center
-    =u.submit :'添加确认',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'
+  =form_for(:user,:url => 'add_user') do |form|
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"name",
+                                                             :field_title=>'帐号',
+                                                             :placeholder_text=>'请输入帐号'}
+
+    =render :partial => "layouts/password_field_row",:locals => {:form=>form,
+                                                                 :field=>"password",
+                                                                 :field_title=>"密码",
+                                                                 :placeholder_text=>'请输入密码'}
+    =render :partial => "layouts/password_field_row",:locals => {:form=>form,
+                                                                 :field=>"password_confirmation",
+                                                                 :field_title=>"确认密码",
+                                                                 :placeholder_text=>'请重新确认密码'}
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"question",
+                                                             :field_title=>'忘记密码问题',
+                                                             :placeholder_text=>'请输入密码问题'}
+
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"answer",
+                                                             :field_title=>'忘记密码答案',
+                                                             :placeholder_text=>'请输入密码答案'}
+    =render :partial => "layouts/error_user_field_row",:locals => {:user=>@user}
+    =render :partial => "layouts/submit_field_row",:locals => {:form=>form,
+                                                               :field_title=>'添加用户'}

@@ -31,7 +31,7 @@ Activity::Application.routes.draw do
 
   get "edit_user" =>"manager#edit_user"
 
-  patch "edit_user"=>"manager#update_user"
+  post "edit_user"=>"manager#update_user"
 
   get 'forgot/error_page'
 end
