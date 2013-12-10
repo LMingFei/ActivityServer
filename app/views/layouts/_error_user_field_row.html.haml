@@ -1,0 +1,4 @@
+- if user.errors.any?
+  .text-center
+    %label(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
+      =user.errors.full_messages.first

@@ -9,7 +9,7 @@ Activity::Application.routes.draw do
   post "forgot2" => 'forgot#forgot2_post'
 
   get "forgot3" =>'forgot#forgot3'
-  patch "forgot3" => 'forgot#forgot3_post'
+  post "forgot3" => 'forgot#forgot3_post'
 
   get 'index' => 'user#index'
   post 'index' =>'user#login'

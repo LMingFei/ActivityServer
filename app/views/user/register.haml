@@ -2,27 +2,29 @@
   %legend
     新用户注册
   =form_for(:user,:url => 'register') do |form|
-    .form-group(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px" )
-      =link_to "用户登录",index_path
+    =render :partial => "layouts/login_link_row"
     =render :partial => "layouts/text_field_row",:locals => {:form=>form,
                                                              :field=>"name",
-                                                             :field_title=>'帐号'}
+                                                             :field_title=>'帐号',
+                                                             :placeholder_text=>'请输入帐号'}
+
     =render :partial => "layouts/password_field_row",:locals => {:form=>form,
                                                                  :field=>"password",
-                                                                 :field_title=>"密码"}
+                                                                 :field_title=>"密码",
+                                                                 :placeholder_text=>'请输入密码'}
     =render :partial => "layouts/password_field_row",:locals => {:form=>form,
                                                                  :field=>"password_confirmation",
-                                                                 :field_title=>"确认密码"}
+                                                                 :field_title=>"确认密码",
+                                                                 :placeholder_text=>'请重新确认密码'}
     =render :partial => "layouts/text_field_row",:locals => {:form=>form,
                                                              :field=>"question",
-                                                             :field_title=>'找回密码问题'}
+                                                             :field_title=>'忘记密码问题',
+                                                             :placeholder_text=>'请输入密码问题'}
 
     =render :partial => "layouts/text_field_row",:locals => {:form=>form,
                                                              :field=>"answer",
-                                                             :field_title=>'找回密码答案'}
-    - if @user.errors.any?
-      .text-center
-        %label(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
-          =@user.errors.full_messages.first
-    .text-center
-      =form.submit :'注册',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'
+                                                             :field_title=>'忘记密码答案',
+                                                             :placeholder_text=>'请输入密码答案'}
+    =render :partial => "layouts/error_user_field_row",:locals => {:user=>@user}
+    =render :partial => "layouts/submit_field_row",:locals => {:form=>form,
+                                                               :field_title=>'注册'}

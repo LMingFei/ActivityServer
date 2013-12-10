@@ -2,19 +2,16 @@
   %legend
     用户登录
   =form_for(:user,:url=>'index') do |form|
-    .form-group(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px")
-      =link_to "用户注册",register_path
+    =render :partial => "layouts/register_link_row"
     =render :partial => "layouts/text_field_row",:locals => {:form=>form,
                                                              :field=>"name",
-                                                             :field_title=>'帐号'}
+                                                             :field_title=>'帐号',
+                                                             :placeholder_text=>'请输入帐号'}
     =render :partial => "layouts/password_field_row",:locals => {:form=>form,
                                                                  :field=>"password",
-                                                                 :field_title=>"密码"}
-    -if flash[:error]
-      %li(class="text-center alert-danger " style="margin:20px auto auto auto;height:20px")
-        .flash-error
-          =flash[:error]
-    .form-group(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px")
-      =link_to "忘记密码",forgot1_path
-    .text-center
-      =form.submit :'登录',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'
+                                                                 :field_title=>"密码",
+                                                                 :placeholder_text=>'请输入密码'}
+    =render :partial => "layouts/error_row"
+    =render :partial => "layouts/forgot_link_row"
+    =render :partial => "layouts/submit_field_row",:locals => {:form=>form,
+                                                               :field_title=>'登录'}

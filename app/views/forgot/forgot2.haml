@@ -1,17 +1,19 @@
-=form_for(@user,:url => 'forgot2') do |u|
-  .form-group(style="width:600px;padding:50px auto;width:50% ;margin:auto auto")
-    %h4
-      重置密码
-    %div(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px" )
-      =link_to "用户登录",index_path
-  .input-group(style="margin:60px auto auto auto" )
-    =u.label :'忘记密码问题',:class =>'input-group-addon text-center disabled',:style =>'width:120px'
-    =u.text_field :question,:class =>'form-control disabled',:style =>'width:450px',:readonly=>true
-  .input-group(style="margin:20px auto auto auto")
-    =u.label :'忘记密码答案',:class =>'input-group-addon text-center',:style =>'width:120px'
-    =u.text_field :answer,:class =>'form-control',:style =>'width:450px',:placeholder=>'请输入答案'
-  -if flash[:error]
-    .text-center(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
-      =flash[:error]
-  .text-center
-    =u.submit :'下一步',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'
+%fieldset(style="width:600px;width:50% ;margin:auto auto")
+  %legend
+    找回密码
+  =form_for(:user,:url => 'forgot2') do |form|
+    =render :partial => "layouts/login_link_row"
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"question",
+                                                             :field_title=>'忘记密码问题',
+                                                             :placeholder_text=>'请输入密码问题'}
+
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"answer",
+                                                             :field_title=>'忘记密码答案',
+                                                             :placeholder_text=>'请输入密码答案'}
+    =render :partial =>"layouts/error_row"
+
+
+    =render :partial => "layouts/submit_field_row",:locals => {:form=>form,
+                                                             :field_title=>'下一步'}
