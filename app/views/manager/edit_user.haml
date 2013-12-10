@@ -20,6 +20,6 @@
     =u.text_field :password_confirmation,:type =>'password',:class =>'form-control',:style =>'width:450px',:placeholder=>'请再输入一遍'
   -if @user.errors.any?
     .text-center(class="col-sm-offset-2  text-center alert-danger " style="margin:20px auto auto auto;height:20px;width:450px")
-      =@user.errors.messages.first.second.first
+      =@user.errors.full_messages.first
   .text-center
     =u.submit :'确认修改',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'

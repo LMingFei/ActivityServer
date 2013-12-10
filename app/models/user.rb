@@ -2,11 +2,25 @@
 
 
 class User < ActiveRecord::Base
-  validates_uniqueness_of :name,:message => "用户名已存在"
-  validates_length_of :name,:in => 4..10,:message => "用户名应为4-10位字符"
-  validates_length_of :password,:minimum => 4,:message => "密码最小为4位字符"
-  validates_presence_of :question,:message=>"找回密码问题不能为空"
-  validates_presence_of :answer,:message=>"找回密码答案不能为空"
+  NAME_MIN_LENGTH=4
+  NAME_MAX_LENGTH=10
+  NAME_RANGE=NAME_MIN_LENGTH..NAME_MAX_LENGTH
+  PASSWORD_MIN_LENGTH=4
+  PASSWORD_MAX_LENGTH=20
+  PASSWORD_RANGE=PASSWORD_MIN_LENGTH..PASSWORD_MAX_LENGTH
+
+  NAME_SIZE=10
+  PASSWORD_SIZE=20
+
+
+
+
+  validates_uniqueness_of :name
+  validates_length_of :name,:in => NAME_RANGE
+  validates_length_of :password,:in => PASSWORD_RANGE
+  validates_presence_of :question,:answer
+
+
   has_secure_password
 
 
@@ -17,4 +31,22 @@ class User < ActiveRecord::Base
     end while User.exists?(column=>self[column])
   end
 
+  def login!(session)
+    session[:user_id]=self.id
+  end
+
+  def self.logout!(session)
+    session[:user_id]=nil
+    flash[:notice]="Logged out"
+    redirect_to :action=>"index",:controller=>""
+  end
+
+  def clear_password!
+    self.password=nil
+  end
+
+  def logged_in?
+    session[:user_id]
+  end
 end
+

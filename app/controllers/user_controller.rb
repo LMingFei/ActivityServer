@@ -61,4 +61,8 @@ private
   def user_params
     params.require(:user).permit(:name, :password, :question,:answer,:password_confirmation)
   end
+
+  def protect
+    User.logged_in?
+  end
 end
