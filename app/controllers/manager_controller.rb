@@ -5,6 +5,7 @@ class ManagerController < ApplicationController
 
   def manager_logined
     if IsAdmin?
+      @title='管理员登录界面'
       @users=User.where("id>0").order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||User.new
       @count=0
       if params[:page]
@@ -35,6 +36,7 @@ class ManagerController < ApplicationController
 
 
   def add_user
+    @title='管理员添加用户'
     @user=User.new
   end
 
@@ -57,6 +59,7 @@ class ManagerController < ApplicationController
 
 
   def edit_user
+    @title='修改用户密码'
     @user=User.find_by_id(params[:id])
   end
 

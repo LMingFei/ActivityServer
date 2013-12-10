@@ -19,7 +19,7 @@ class UserController < ApplicationController
   def login
     user= User.find_by_name(params[:user][:name])
     if user&&user.authenticate(params[:user][:password])
-      session[:token] = user.token
+      user.login!(session)
       if IsAdmin?
         redirect_to '/manager_logined'
       else
@@ -51,7 +51,7 @@ class UserController < ApplicationController
 
   def user_logined
     unless IsAdmin?
-
+      @title='用户登录界面'
     else
       redirect_to '/manager_logined'
     end
@@ -68,21 +68,21 @@ private
     params.require(:user).permit(:name, :password, :question,:answer,:password_confirmation)
   end
 
-  def protect
-    unless User.logged_in?(session)
-      #session[:protected_page]=request.request_uri
-      flash[:notice]="请先登录"
-      redirect_to :action => "index"
-      return false
-    end
-  end
-
   def redirect_to_forwarding_url
     if(redirect_url=session[:protected_page])
       session[:protected_page]=nil
       redirect_to redirect_url
     else
       redirect_to :action => "index"
+    end
+  end
+
+  def protect
+    unless User.logged_in?(session)
+      #session[:protected_page]=request.request_uri
+      flash[:notice]="请先登录"
+      redirect_to :action => "index"
+      return false
     end
   end
 

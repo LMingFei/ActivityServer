@@ -13,8 +13,6 @@ class User < ActiveRecord::Base
   PASSWORD_SIZE=20
 
 
-
-
   validates_uniqueness_of :name
   validates_length_of :name,:in => NAME_RANGE
   validates_length_of :password,:in => PASSWORD_RANGE

@@ -1,6 +1,7 @@
 #encoding: utf-8
 class ForgotController < ApplicationController
   def forgot1
+    @title='找回密码'
     @user=User.new
   end
 
@@ -28,6 +29,7 @@ class ForgotController < ApplicationController
 
   def forgot2
     if session[:Back_token]
+      @title='找回密码'
       @user=User.new
       user=User.find_by_token(session[:Back_token])
       @user.question=user.question
@@ -51,6 +53,7 @@ class ForgotController < ApplicationController
 
   def forgot3
     if session[:Back_token]
+      @title='找回密码'
       @user=User.find_by_token(session[:Back_token])
     else
       redirect_to '/forgot1'
