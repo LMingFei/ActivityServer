@@ -1,0 +1,21 @@
+=form_for(@user,:url=>'index') do |u|
+  .form-group(style="width:600px;padding:50px 50px 50px 50px;width:50% ;margin:auto auto")
+    %h4
+      用户登录
+    %div(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px;" )
+      =link_to "用户注册",register_path
+  .input-group(style="margin:20px auto auto auto" )
+    =u.label :'帐号',:class =>'input-group-addon text-center',:style =>'width:120px'
+    =u.text_field :name,:class =>'form-control',:style =>'width:450px'
+  .input-group(style="margin:20px auto auto auto" )
+    =u.label :'密码',:class =>'input-group-addon text-center',:style =>'width:120px'
+    =u.text_field :password,:type =>'password',:class =>'form-control',:style =>'width:450px'
+  -if flash[:error]
+    %li(class="text-center alert-danger " style="margin:20px auto auto auto;height:20px")
+      .flash-error
+        =flash[:error]
+  .form-group(style="width:600px;padding:30px 50px 20px 50px;width:50% ;margin:auto auto")
+    %div(class="col-sm-offset-2 col-sm-10 text-right" style="font-size:12px" )
+      =link_to "忘记密码",forgot1_path
+  .text-center
+    =u.submit :'登录',:class =>'btn btn-default',:style =>'margin:20px auto auto auto ;width:150px'

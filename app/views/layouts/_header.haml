@@ -1,0 +1,10 @@
+%h1
+  &nbsp&nbsp活动通
+-if current_user
+  %div(class="text-right")
+    %span(class="text-right")
+      你好，
+      =current_user.name
+    %span(class=" text-right" style="font-size:14px" )
+      =link_to "退出",logout_path
+    &nbsp&nbsp&nbsp&nbsp&nbsp

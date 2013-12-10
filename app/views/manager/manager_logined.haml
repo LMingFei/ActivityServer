@@ -1,0 +1,33 @@
+=render 'manager/header'
+%ul(class="breadcrumb")
+  %li(class="active")
+    首页
+.form-group( style="margin:auto auto")
+  .ui-content
+    %label(style="padding:0px 50px 0px 50px " )
+      用户管理
+    %span(class="right")
+      %a(class="btn-default btn" href="/add_user" )
+        添加用户
+
+%table(class="table table-hover text-center" )
+  %tr
+    %td
+      编号
+    %td
+      用户名
+    %td
+      操作
+  -@users.each do |u|
+    %tr
+      %td
+
+      %td
+        =u.name
+      %td
+        =link_to "删除",manager_logined_path(id:u.id)
+        |
+        =link_to "修改密码",edit_user_path(:id=>u.id),direction:"up",:method => :post,:remote =>true
+%div(class="text-right" )
+  =will_paginate @users,{:previous_label =>"上一页",:next_label => "下一页"}
+
