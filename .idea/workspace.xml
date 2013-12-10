@@ -30,7 +30,7 @@
     <file path="/user_logined.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386154685024" ignored="false" />
     <file path="/20131201024412_modify_user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385866469373" ignored="false" />
     <file path="/20131201030822_addcolumn_to_users.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385867345370" ignored="false" />
-    <file path="/application_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386664241968" ignored="false" />
+    <file path="/application_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386673284716" ignored="false" />
     <file path="/flash_message.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385869892877" ignored="false" />
     <file path="/forgot_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386667741794" ignored="false" />
     <file path="/error_page.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386063495405" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/20131204071311_rename_column_password_degist.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386141246731" ignored="false" />
     <file path="/20131204081409_addauthority_to_user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386145115456" ignored="false" />
     <file path="/manager_logined.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670413496" ignored="false" />
-    <file path="/manager_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670396458" ignored="false" />
+    <file path="/manager_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386675113018" ignored="false" />
     <file path="$PROJECT_DIR$/../demo01/app/views/test/page1.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386151362689" ignored="false" />
     <file path="/page1.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386150835728" ignored="false" />
     <file path="$PROJECT_DIR$/../demo01/app/controllers/test_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386151212953" ignored="false" />
@@ -68,7 +68,7 @@
     <file path="/_password_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386666737810" ignored="false" />
     <file path="/_text_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386666768609" ignored="false" />
     <file path="/crubs_nav.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386668684715" ignored="false" />
-    <file path="/_show_users.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670098074" ignored="false" />
+    <file path="/_show_users.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386672591295" ignored="false" />
     <file path="/_crubs_nav.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386669706098" ignored="false" />
     <file path="/_will_paginate.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670352874" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,10 +95,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manager_logined.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/manager/manager_logined.haml">
+      <file leaf-file-name="_show_users.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/manager/_show_users.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="62" selection-start="280" selection-end="280" vertical-scroll-proportion="0.19266056">
+            <state line="15" column="105" selection-start="311" selection-end="311" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -107,36 +107,16 @@
       <file leaf-file-name="manager_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/manager_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="41" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#242#549#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_will_paginate.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_will_paginate.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
+            <state line="8" column="73" selection-start="261" selection-end="261" vertical-scroll-proportion="-4.285714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_show_users.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/manager/_show_users.html.haml">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/user/register.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="78" vertical-scroll-proportion="-0.0">
+            <state line="18" column="74" selection-start="426" selection-end="426" vertical-scroll-proportion="0.4568528">
               <folding />
             </state>
           </provider>
@@ -152,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/user/register.haml" />
-        <option value="$PROJECT_DIR$/app/views/forgot/forgot3.haml" />
         <option value="$PROJECT_DIR$/app/views/user/index.haml" />
         <option value="$PROJECT_DIR$/app/views/forgot/forgot2.haml" />
         <option value="$PROJECT_DIR$/app/views/forgot/forgot1.haml" />
@@ -164,10 +142,12 @@
         <option value="$PROJECT_DIR$/app/views/manager/edit_user.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_crubs_nav.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/manager/_show_users.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_will_paginate.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/manager_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/manager/manager_logined.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_will_paginate.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/manager/_show_users.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/manager_controller.rb" />
       </list>
     </option>
   </component>
@@ -330,6 +310,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,80 +746,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/forgot_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="38" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.64467007">
-          <folding>
-            <element signature="e#107#647#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/forgot/forgot3.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="113" selection-end="114" vertical-scroll-proportion="0.07936508">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/forgot/forgot1.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="39" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5062167">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="11" selection-start="846" selection-end="846" vertical-scroll-proportion="0.7208122">
-          <folding>
-            <element signature="e#525#663#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="70" selection-start="520" selection-end="520" vertical-scroll-proportion="0.4568528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/user_logined.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="82" selection-start="808" selection-end="824" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/edit_user.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="1271" selection-end="1271" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/add_user.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="163" selection-end="163" vertical-scroll-proportion="0.105820104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_crubs_nav.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="37" selection-start="188" selection-end="188" vertical-scroll-proportion="0.26455027">
@@ -818,32 +760,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/_show_users.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/manager/edit_user.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.875">
+        <state line="19" column="78" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.5026455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/manager/add_user.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="163" selection-end="163" vertical-scroll-proportion="0.105820104">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="41" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="36" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.42328042">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/manager/manager_logined.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="45" selection-start="291" selection-end="291" vertical-scroll-proportion="0.23809524">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_will_paginate.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
+        <state line="1" column="41" selection-start="67" selection-end="67" vertical-scroll-proportion="0.026455026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="50" selection-start="140" selection-end="140" vertical-scroll-proportion="0.05076142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="11" selection-start="846" selection-end="846" vertical-scroll-proportion="1.0406091">
+          <folding>
+            <element signature="e#525#663#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/forgot_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="24" selection-end="24" vertical-scroll-proportion="0.05076142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/manager_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="33" selection-start="25" selection-end="25" vertical-scroll-proportion="0.05076142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="28" selection-end="28" vertical-scroll-proportion="0.02538071">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/manager_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#242#549#0" expanded="false" />
-          </folding>
+        <state line="8" column="73" selection-start="261" selection-end="261" vertical-scroll-proportion="-4.285714">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/manager_logined.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/manager/_show_users.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="280" selection-end="280" vertical-scroll-proportion="0.19266056">
+        <state line="15" column="105" selection-start="311" selection-end="311" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="74" selection-start="426" selection-end="426" vertical-scroll-proportion="0.4568528">
           <folding />
         </state>
       </provider>
