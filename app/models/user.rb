@@ -16,10 +16,13 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :name
   validates_length_of :name,:in => NAME_RANGE
   validates_length_of :password,:in => PASSWORD_RANGE
+  has_secure_password
   validates_presence_of :question,:answer
 
 
-  has_secure_password
+  attr_accessor :remember_me
+
+
 
 
   before_create{generate_token(:token)}

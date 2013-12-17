@@ -1,0 +1,25 @@
+%header
+  .header-left
+    %a.btn-style.btn-4(ng-tap="goto_activity_sign_up()")
+      返回
+  竞价列表
+  .header-right(ng-switch="btn_flag")
+    %a.btn-style.btn-4.disabled(ng-Switch-default)
+      创建新竞价
+    %a.btn-style.btn-4(ng-tap="create_new_tip()" ng-Switch-when = "true")
+      创建新竞价
+.wrapper
+  %ul.list-style-2
+    %center
+      %li(ng-repeat="bid in bids" class="{{bid.status|status}}")
+        %a(ng-tap="goto_detail_tip({{bid}})")
+          %h3
+            {{bid.name}}
+%footer
+  %ul(class="footer-nav footer-nav-2tabs")
+    %li
+      %a(ng-tap="goto_activity_sign_up()")
+        报名
+    %li.active
+      %a
+        竞价

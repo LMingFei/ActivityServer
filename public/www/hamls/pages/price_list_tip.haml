@@ -1,0 +1,15 @@
+%header
+  .header-left
+    %a.btn-style.btn-4(ng-tap="goto_price_list()" id="btn_back")
+      返回
+  {{current_bidder_array.length}}人已竞价
+  .header-right(ng-switch="btn_flag")
+    %a.btn-style.btn-4(ng-tap="bidding_end()" ng-Switch-default)
+      结束
+    %a.btn-style.btn-4(ng-Switch-when="false" ng-tap="goto_price_statistics()")
+      统计
+.wrapper.scrollable
+  %ul.list-style-2
+    %center
+      %li(ng-repeat="bidder in current_bidder_array")
+        %h3 Name:{{bidder.name}}       Phone: {{bidder.phone}}

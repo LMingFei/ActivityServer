@@ -3,7 +3,7 @@
   %legend
     修改密码
   =form_for(:user,:url => 'edit_user') do |form|
-    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+    =render :partial => "layouts/text_field_locking_row",:locals => {:form=>form,
                                                              :field=>"name",
                                                              :field_title=>'帐号',
                                                              :placeholder_text=>'请输入要修改的帐号'}

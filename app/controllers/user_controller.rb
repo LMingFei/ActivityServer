@@ -1,8 +1,7 @@
 #encoding: utf-8
-
 class UserController < ApplicationController
-  before_filter :protect,:except => [:index,:register,:create,:login]
-
+  before_filter :protect,:except => [:index,:register,:create,:login,:phone_login]
+  skip_before_filter :verify_authenticity_token,:only => :phone_login
   def index
     if User.logged_in?(session)
       if IsAdmin?
@@ -41,7 +40,8 @@ class UserController < ApplicationController
     respond_to do |format|
       if @user.save
         flash[:notice]="用户"+@user.name+"创建成功!"
-        format.html { redirect_to '/index'}
+        @user.login!(session)
+        format.html { redirect_to '/user_logined'}
       else
         @user.clear_password!
         format.html { render action: '/register'}
@@ -58,9 +58,29 @@ class UserController < ApplicationController
   end
 
   def logout
-    flash[:notice]="用户已"+current_user.name+"退出"
+    flash[:notice]="用户"+current_user.name+"已退出"
     User.logout!(session)
     redirect_to root_url
+  end
+
+  def phone_login
+
+    user= User.find_by_name(params[:name])
+    respond_to do |f|
+      if user&&user.authenticate(params[:password])
+        f.json {render :json=> true}
+      else
+        f.json {render :json=> false}
+      end
+    end
+  end
+
+  def data_synchronous
+    user=User.find_by_name(params[:name]);
+    activities=params[:activities];
+    sign_ups=params[:sign_ups];
+    bids=params[:bids]
+    biddings=params[:biddings];
   end
 
 private
@@ -68,18 +88,8 @@ private
     params.require(:user).permit(:name, :password, :question,:answer,:password_confirmation)
   end
 
-  def redirect_to_forwarding_url
-    if(redirect_url=session[:protected_page])
-      session[:protected_page]=nil
-      redirect_to redirect_url
-    else
-      redirect_to :action => "index"
-    end
-  end
-
   def protect
     unless User.logged_in?(session)
-      #session[:protected_page]=request.request_uri
       flash[:notice]="请先登录"
       redirect_to :action => "index"
       return false

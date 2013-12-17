@@ -1,0 +1,22 @@
+%header
+  .header-left
+    %a.btn-style.btn-4(ng-Tap = "go_activity_list()") 返回
+  报名
+  .header-right(ng-switch="btn_flag")
+    %a.btn-style.btn-4(ng-tap="activity_start()" ng-show="btn_show()") 开始
+    %a.btn-style.btn-4( ng-hide="btn_show()" ng-tap="activity_end()" ng-Switch-when = "true")结束
+    %a.btn-style.btn-4.disabled(ng-hide="btn_show()" ng-Switch-default)结束
+.wrapper
+  .ui-content
+    %ul.list-style-2
+      %center
+        %li(ng-repeat="sign in signs")
+          Name: {{sign["name"]}}  Phone: {{sign["phone"]}}
+  %footer
+    %ul.footer-nav.footer-nav-2tabs
+      %li.active
+        %a
+          报名
+      %li
+        %a(ng-Tap = "goto_price_list()" )
+          竞价

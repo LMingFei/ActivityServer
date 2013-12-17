@@ -1,0 +1,18 @@
+.no-footer
+  %header
+    活动列表
+    .header-left
+      %a.btn-style.btn-4(ng-tap="data_synchronous()")
+        数据同步
+    .header-right(ng-switch="btn_disable_flag")
+      %a.btn-style.btn-4.disabled(ng-Switch-default)
+        创建活动
+      %a.btn-style.btn-4(ng-tap="goto_create_activity()" ng-Switch-when="true")
+        创建活动
+  .wrapper
+    %ul.list-style-2
+      %center
+        %li(class="{{activity.status|status}}" ng-repeat="activity in current_activity_array")
+          %a(ng-tap="goto_detail_activity({{activity}})")
+            %h3
+              {{activity.name}}

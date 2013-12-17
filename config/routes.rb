@@ -34,4 +34,9 @@ Activity::Application.routes.draw do
   post "edit_user"=>"manager#update_user"
 
   get 'forgot/error_page'
+
+  post 'user/phone_login'
+
+  post 'data_synchronous'=>"user#data_synchronous"
+
 end

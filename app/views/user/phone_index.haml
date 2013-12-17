@@ -1,0 +1,15 @@
+%fieldset(style="width:600px;width:50% ;margin:auto auto")
+  %legend
+    用户登录
+  =form_for(:user,:url=>'phone_index') do |form|
+    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+                                                             :field=>"name",
+                                                             :field_title=>'帐号',
+                                                             :placeholder_text=>'请输入帐号'}
+    =render :partial => "layouts/password_field_row",:locals => {:form=>form,
+                                                                 :field=>"password",
+                                                                 :field_title=>"密码",
+                                                                 :placeholder_text=>'请输入密码'}
+    =render :partial => "layouts/error_row"
+    =render :partial => "layouts/submit_field_row",:locals => {:form=>form,
+                                                               :field_title=>'登录'}

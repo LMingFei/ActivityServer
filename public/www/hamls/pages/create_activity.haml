@@ -1,0 +1,17 @@
+.no-footer
+  %header
+    创建活动
+    .header-left
+      %a.btn-style.btn-4(ng-Tap="goto_activity_list()") 返回
+  .wrapper
+    %form.wrapper-inner
+    .ui-content(style="text-align:center" )
+      %h5活动名称
+    %center
+      .ui-content
+        %input.input-full(ng-model="input_name" type="text" ng-change="VerificationOfEmpty()")
+      .ui-content(ng-switch="btn_flag")
+        %a.btn-style.btn-2.disabled(ng-Switch-default)
+          创建
+        %a.btn-style.btn-2(ng-tap="goto_activity_sign_up()" ng-Switch-when ="true" )
+          创建

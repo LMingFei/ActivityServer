@@ -3,7 +3,7 @@
     找回密码
   =form_for(:user,:url => 'forgot2') do |form|
     =render :partial => "layouts/login_link_row"
-    =render :partial => "layouts/text_field_row",:locals => {:form=>form,
+    =render :partial => "layouts/text_field_locking_row",:locals => {:form=>form,
                                                              :field=>"question",
                                                              :field_title=>'忘记密码问题',
                                                              :placeholder_text=>'请输入密码问题'}

@@ -5,19 +5,19 @@
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385782476592" ignored="false" />
-    <file path="/application.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386660883411" ignored="false" />
+    <file path="/application.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387267860864" ignored="false" />
     <file path="/20131130034114_add_details_to_user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385782896971" ignored="false" />
-    <file path="/user_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386675889744" ignored="false" />
+    <file path="/user_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387274721566" ignored="false" />
     <file path="/_form_user.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385795587586" ignored="false" />
     <file path="/new.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385797639057" ignored="false" />
     <file path="$USER_HOME$/depottest/app/views/products/_form.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385783614865" ignored="false" />
     <file path="/_form.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385783613042" ignored="false" />
-    <file path="/routes.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386669260394" ignored="false" />
-    <file path="/Dummy.txt" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386660263408" ignored="false" />
+    <file path="/routes.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387262483557" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386827507029" ignored="false" />
     <file path="$PROJECT_DIR$/../Ruby/ActivityServer /app/views/user/register.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385788625128" ignored="false" />
-    <file path="/index.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386667413750" ignored="false" />
+    <file path="/index.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386755305630" ignored="false" />
     <file path="/show.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385791919743" ignored="false" />
-    <file path="/user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386679395700" ignored="false" />
+    <file path="/user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386755583553" ignored="false" />
     <file path="$PROJECT_DIR$/../Ruby/ActivityServer /app/views/user/login.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385792477653" ignored="false" />
     <file path="$USER_HOME$/depottest/app/controllers/products_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385793658477" ignored="false" />
     <file path="/products_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385793641387" ignored="false" />
@@ -26,20 +26,20 @@
     <file path="/index.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385807592938" ignored="false" />
     <file path="/register.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385807986354" ignored="false" />
     <file path="/forgot1.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386667320832" ignored="false" />
-    <file path="/forgot2.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386667609067" ignored="false" />
+    <file path="/forgot2.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387269305934" ignored="false" />
     <file path="/user_logined.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386154685024" ignored="false" />
     <file path="/20131201024412_modify_user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385866469373" ignored="false" />
     <file path="/20131201030822_addcolumn_to_users.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385867345370" ignored="false" />
     <file path="/application_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386673284716" ignored="false" />
     <file path="/flash_message.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1385869892877" ignored="false" />
-    <file path="/forgot_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386675977886" ignored="false" />
+    <file path="/forgot_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386744432732" ignored="false" />
     <file path="/error_page.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386063495405" ignored="false" />
     <file path="/_header.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386229377600" ignored="false" />
     <file path="/forgot3.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386667378045" ignored="false" />
     <file path="/20131204071311_rename_column_password_degist.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386141246731" ignored="false" />
     <file path="/20131204081409_addauthority_to_user.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386145115456" ignored="false" />
     <file path="/manager_logined.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670413496" ignored="false" />
-    <file path="/manager_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386675960310" ignored="false" />
+    <file path="/manager_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387268945313" ignored="false" />
     <file path="$PROJECT_DIR$/../demo01/app/views/test/page1.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386151362689" ignored="false" />
     <file path="/page1.html.erb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386150835728" ignored="false" />
     <file path="$PROJECT_DIR$/../demo01/app/controllers/test_controller.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386151212953" ignored="false" />
@@ -59,21 +59,58 @@
     <file path="/en.yml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386228620026" ignored="false" />
     <file path="/edit_user.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386668921279" ignored="false" />
     <file path="/manager.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386399062538" ignored="false" />
-    <file path="/manager_logined.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386399129964" ignored="false" />
+    <file path="/manager_logined.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387266139673" ignored="false" />
     <file path="/manager_logined.js.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386400924527" ignored="false" />
     <file path="/application.css" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386657344331" ignored="false" />
-    <file path="$PROJECT_DIR$/config/environments/production.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386659648619" ignored="false" />
-    <file path="/application.scss" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386659783032" ignored="false" />
+    <file path="/application.scss" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387270245766" ignored="false" />
     <file path="/_name_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386661466497" ignored="false" />
     <file path="/_password_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386666737810" ignored="false" />
-    <file path="/_text_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386666768609" ignored="false" />
+    <file path="/_text_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387269848814" ignored="false" />
     <file path="/crubs_nav.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386668684715" ignored="false" />
-    <file path="/_show_users.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386672591295" ignored="false" />
-    <file path="/_crubs_nav.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386669706098" ignored="false" />
+    <file path="/_show_users.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387266798461" ignored="false" />
+    <file path="/_crubs_nav.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387265251332" ignored="false" />
     <file path="/_will_paginate.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386670352874" ignored="false" />
-    <file path="/zh_CN.yml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386680175141" ignored="false" />
-    <file path="/application.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386679056860" ignored="false" />
-    <file path="/_error_user_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386680105381" ignored="false" />
+    <file path="/zh_CN.yml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387088128898" ignored="false" />
+    <file path="/application.rb" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387087848315" ignored="false" />
+    <file path="/_error_user_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387087719839" ignored="false" />
+    <file path="/phone_index.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386748033320" ignored="false" />
+    <file path="/phone_login.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387272720780" ignored="false" />
+    <file path="/phone_login.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387079380775" ignored="false" />
+    <file path="/_texxt_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386749287259" ignored="false" />
+    <file path="/_remember_field_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386755417269" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/controller/phone_login.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1386828267460" ignored="false" />
+    <file path="/activity_list.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387274466400" ignored="false" />
+    <file path="/Activity.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387271165832" ignored="false" />
+    <file path="/phone_login.html" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387079031992" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/model/Signup.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103344027" ignored="false" />
+    <file path="/Signup.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103339985" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/model/Bid.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105895013" ignored="false" />
+    <file path="/Bid.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105632134" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/model/Bidding.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387104237487" ignored="false" />
+    <file path="/Bidding.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387104226165" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/controller/activity_sign_upcontroller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103438022" ignored="false" />
+    <file path="/activity_sign_upcontroller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103644869" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/common/init_database.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387095537746" ignored="false" />
+    <file path="/init_database.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387271683064" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/index.html" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387106139954" ignored="false" />
+    <file path="/index.html" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387100570537" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/controller/activity_sign_up_controller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105303010" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/hamls/pages/activity_sign_up.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103512320" ignored="false" />
+    <file path="/sms.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103894573" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/plugins/sms.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387103894573" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/controller/price_list_controller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387106235119" ignored="false" />
+    <file path="/price_list_controller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387106219368" ignored="false" />
+    <file path="/price_list.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387106182630" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/hamls/pages/price_list.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387106182630" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/routes.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105443560" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/common/navigate.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105384952" ignored="false" />
+    <file path="$PROJECT_DIR$/../party_bid/www/js/controller/price_list_tip.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387105532888" ignored="false" />
+    <file path="/_flash_message.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387260420904" ignored="false" />
+    <file path="/_text_field_locking.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387270987136" ignored="false" />
+    <file path="/_text_field_locking_row.html.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387270266567" ignored="false" />
+    <file path="/create_activity_controller.js" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387273730655" ignored="false" />
+    <file path="/activity_list.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387272862973" ignored="false" />
+    <file path="/activity_sign_up.haml" changelist="8c445432-4e74-4979-b209-ecfcb2a4705f" time="1387274031205" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,48 +135,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="phone_login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/www/js/controller/phone_login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="45" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
+            <state line="21" column="45" selection-start="658" selection-end="684" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zh_CN.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/zh_CN.yml">
+      <file leaf-file-name="activity_list.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/www/js/controller/activity_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="10" selection-start="3918" selection-end="3918" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#9#583#0" expanded="false" />
-                <element signature="e#586#1492#0" expanded="false" />
-                <element signature="e#1554#2321#0" expanded="false" />
-                <element signature="e#2452#3430#0" expanded="false" />
-                <element signature="e#3433#3702#0" expanded="false" />
-                <element signature="e#3811#3853#0" expanded="false" />
-                <element signature="e#3856#3899#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="636" selection-end="643" vertical-scroll-proportion="0.0">
+            <state line="24" column="203" selection-start="974" selection-end="982" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="53" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#523#661#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -147,35 +156,22 @@
       <file leaf-file-name="user_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="29" selection-start="825" selection-end="825" vertical-scroll-proportion="0.599297">
+            <state line="82" column="31" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.89847714">
               <folding>
-                <element signature="e#353#693#0" expanded="false" />
-                <element signature="e#417#687#0" expanded="false" />
-                <element signature="e#503#610#0" expanded="false" />
-                <element signature="e#697#752#0" expanded="false" />
-                <element signature="e#1055#1173#0" expanded="false" />
-                <element signature="e#1177#1292#0" expanded="false" />
-                <element signature="e#1304#1418#0" expanded="false" />
-                <element signature="e#1422#1624#0" expanded="false" />
-                <element signature="e#1628#1825#0" expanded="false" />
+                <element signature="e#778#833#0" expanded="false" />
+                <element signature="e#1173#1291#0" expanded="false" />
+                <element signature="e#1295#1410#0" expanded="false" />
+                <element signature="e#1865#1979#0" expanded="false" />
+                <element signature="e#1983#2128#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/user/register.haml">
+      <file leaf-file-name="Activity.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/www/js/model/Activity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_error_user_field_row.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_error_user_field_row.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.875">
+            <state line="18" column="9" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,22 +187,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_crubs_nav.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_will_paginate.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/manager/_show_users.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/manager_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_text_field_locking.haml" />
+        <option value="$PROJECT_DIR$/app/views/forgot/forgot2.haml" />
+        <option value="$PROJECT_DIR$/app/views/manager/edit_user.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_text_field_row.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/controllers/forgot_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/manager/manager_logined.haml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/User/zh_CN.yml" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_error_user_field_row.html.haml" />
-        <option value="$PROJECT_DIR$/config/locales/zh_CN.yml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_text_field_locking_row.html.haml" />
+        <option value="dbtable:/c65ea42e/f4d3a880-906e-44a3-87dd-8eceec89ac13/..users" />
+        <option value="$PROJECT_DIR$/public/www/js/model/Activity.js" />
+        <option value="$PROJECT_DIR$/public/www/js/common/init_database.js" />
+        <option value="$PROJECT_DIR$/public/www/js/controller/phone_login.js" />
+        <option value="$PROJECT_DIR$/public/www/hamls/pages/activity_list.haml" />
+        <option value="$PROJECT_DIR$/public/www/js/controller/create_activity_controller.js" />
+        <option value="$PROJECT_DIR$/public/www/hamls/pages/activity_sign_up.haml" />
+        <option value="$PROJECT_DIR$/public/www/js/controller/activity_list.js" />
+        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
       </list>
     </option>
   </component>
@@ -240,6 +236,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
+              <option name="myItemId" value="ActivityServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,35 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
+              <option name="myItemId" value="ActivityServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -306,25 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
+              <option name="myItemId" value="ActivityServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,20 +290,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Database.TableEditor.Splitter" value="0.9050388" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="ruby.project.structure" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../party_bid" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/depottest" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -619,14 +569,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="743" extended-state="1" />
+    <frame x="0" y="0" width="1366" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2001522" sideWeight="0.67799354" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32200646" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2001522" sideWeight="0.67799354" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006088" sideWeight="0.67799354" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17047185" sideWeight="0.67799354" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32200646" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -635,7 +586,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32200646" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -700,121 +650,127 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_text_field_locking_row.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="426" selection-end="426" vertical-scroll-proportion="0.4568528">
+        <state line="2" column="80" selection-start="248" selection-end="248" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/forgot_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="32" selection-start="956" selection-end="956" vertical-scroll-proportion="0.27918783" />
+    <entry file="dbDummy://dbtable:/c65ea42e/f4d3a880-906e-44a3-87dd-8eceec89ac13/..users">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/manager_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/www/js/model/Bid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="35" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/manager_logined.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="213" selection-end="213" vertical-scroll-proportion="0.15873016" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/manager/_show_users.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="37" selection-start="359" selection-end="359" vertical-scroll-proportion="0.44973546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.60913706">
+        <state line="22" column="4" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5588235">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/public/www/js/model/Signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="45" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
+        <state line="15" column="34" selection-start="394" selection-end="415" vertical-scroll-proportion="0.38927335">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_error_user_field_row.html.haml">
+    <entry file="file://$PROJECT_DIR$/public/www/js/model/Bidding.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.875">
+        <state line="26" column="8" selection-start="603" selection-end="603" vertical-scroll-proportion="0.6747405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/register.haml">
+    <entry file="file://$PROJECT_DIR$/public/www/js/common/init_database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="625" selection-end="625" vertical-scroll-proportion="0.35532996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/js/model/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="285" selection-end="285" vertical-scroll-proportion="0.31634447">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/js/controller/bidding_result_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="6" selection-start="2591" selection-end="2591" vertical-scroll-proportion="1.6870503">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/js/controller/create_activity_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="970" selection-end="970" vertical-scroll-proportion="0.5837563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/hamls/pages/activity_sign_up.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="12" selection-start="674" selection-end="674" vertical-scroll-proportion="0.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/hamls/pages/phone_login.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+    <entry file="file://$PROJECT_DIR$/public/www/hamls/pages/activity_list.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="636" selection-end="643" vertical-scroll-proportion="0.0">
+        <state line="11" column="56" selection-start="331" selection-end="331" vertical-scroll-proportion="0.29100528">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/zh_CN.yml">
+    <entry file="file://$PROJECT_DIR$/public/www/js/model/Activity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="10" selection-start="3918" selection-end="3918" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#9#583#0" expanded="false" />
-            <element signature="e#586#1492#0" expanded="false" />
-            <element signature="e#1554#2321#0" expanded="false" />
-            <element signature="e#2452#3430#0" expanded="false" />
-            <element signature="e#3433#3702#0" expanded="false" />
-            <element signature="e#3811#3853#0" expanded="false" />
-            <element signature="e#3856#3899#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/user_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.05272408">
+        <state line="18" column="9" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/public/www/js/controller/phone_login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#523#661#0" expanded="false" />
-          </folding>
+        <state line="21" column="45" selection-start="658" selection-end="684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/www/js/controller/activity_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="203" selection-start="974" selection-end="982" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="825" selection-end="825" vertical-scroll-proportion="0.599297">
+        <state line="82" column="31" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.89847714">
           <folding>
-            <element signature="e#353#693#0" expanded="false" />
-            <element signature="e#417#687#0" expanded="false" />
-            <element signature="e#503#610#0" expanded="false" />
-            <element signature="e#697#752#0" expanded="false" />
-            <element signature="e#1055#1173#0" expanded="false" />
-            <element signature="e#1177#1292#0" expanded="false" />
-            <element signature="e#1304#1418#0" expanded="false" />
-            <element signature="e#1422#1624#0" expanded="false" />
-            <element signature="e#1628#1825#0" expanded="false" />
+            <element signature="e#778#833#0" expanded="false" />
+            <element signature="e#1173#1291#0" expanded="false" />
+            <element signature="e#1295#1410#0" expanded="false" />
+            <element signature="e#1865#1979#0" expanded="false" />
+            <element signature="e#1983#2128#0" expanded="false" />
           </folding>
         </state>
       </provider>

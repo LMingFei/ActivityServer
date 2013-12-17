@@ -16,8 +16,9 @@ class ManagerController < ApplicationController
         respond_to do |format|
         if @delete_user.destroy
             params[:id]=nil
-            page=Integer(params[:page])
+            page=params[:page]||1
             if @users.length==0
+              page=Integer(page)
               page-=1
             end
             format.html{redirect_to manager_logined_path(:page=>page)}
@@ -46,7 +47,7 @@ class ManagerController < ApplicationController
     @user=User.new(user_params)
     respond_to do |format|
       if @user.save
-        format.html { redirect_to '/manager_logined' }
+        format.html {redirect_to manager_logined_path(:page=>1)}
       else
         format.html { render action: '/add_user'}
       end
@@ -64,12 +65,12 @@ class ManagerController < ApplicationController
   end
 
   def update_user
-    @user=User.find_by_name(params[:user][:name])
+    @user=User.find_by_id(params[:id])
     @user.password=params[:user][:password]
     @user.password_confirmation=params[:user][:password_confirmation]
     respond_to do |format|
       if @user.update(password:@user.password)
-        format.html { redirect_to '/manager_logined'}
+        format.html { redirect_to manager_logined_path(:page=>1)}
       else
         format.html { render action: '/edit_user'}
       end

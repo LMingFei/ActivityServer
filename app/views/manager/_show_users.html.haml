@@ -13,6 +13,6 @@
       %td
         =user.name
       %td
-        =link_to "删除",manager_logined_path(id:user.id,:page=>params[:page]),:data=>{:confirm => '确认要删除吗'}
+        =link_to "删除",manager_logined_path(id:user.id,:page=>params[:page]),:confirm => "确认删除吗？"
         |
-        =link_to "修改密码",edit_user_path(:id=>user.id),direction:"up",:method => :post,:remote =>true
+        =link_to "修改密码",edit_user_path(:id=>user.id)

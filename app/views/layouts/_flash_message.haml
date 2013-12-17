@@ -1,6 +1,9 @@
--if flash[:notice]
-  .flash-notice
-    =flash[:notice]
--if flash[:alert]
-  .flash-alert
-    =flash[:alert]
+%center
+  -if flash[:notice]
+    %div
+      %h4
+        =flash[:notice]
+  -if flash[:alert]
+    %div
+      %h4
+        =flash[:alert]

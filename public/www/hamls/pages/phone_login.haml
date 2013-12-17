@@ -1,0 +1,20 @@
+.no-footer
+  %header
+    活动通
+  .wrapper
+    %form.wrapper-inner
+    .ui-content(style="text-align:center" )
+      %h5
+        用户登录
+    %ui-content
+      用户名:
+      %input.input-full(ng-model="name" type="text" ng-change="VerificationOfEmpty()")
+    .ui-content
+      密码:
+      %input.input-full(ng-model="password" type="password" ng-change="VerificationOfEmpty()")
+    %center
+      .ui-content(ng-switch="btn_flag")
+        %a.btn-style.btn-2.disabled(ng-Switch-default)
+          登录
+        %a.btn-style.btn-2(ng-tap="goto_activity_list()" ng-Switch-when ="true" )
+          登录

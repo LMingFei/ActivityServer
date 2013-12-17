@@ -11,7 +11,7 @@ class ForgotController < ApplicationController
       user= User.find_by_name(params[:user][:name])
       respond_to do |format|
         if user
-          if user.token
+          unless user.authority
             session[:Back_token]=user.token
             format.html { redirect_to forgot2_path}
           else
@@ -67,8 +67,9 @@ class ForgotController < ApplicationController
       @user.password_confirmation=params[:user][:password_confirmation]
       respond_to do |format|
         if @user.update(password:@user.password)
-          format.html { redirect_to root_url}
           reset_session
+          @user.login!(session)
+          format.html { redirect_to '/user_logined'}
         else
           format.html { render action: '/forgot3'}
         end

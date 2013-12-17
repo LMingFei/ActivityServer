@@ -1,8 +1,7 @@
 -if field
   %ul(class="breadcrumb")
     %li
-      %a(href="manager_logined")
-        首页
+      =link_to "首页",manager_logined_path(:page=>params[:page])
     %li(class="active")
     =field
 -else

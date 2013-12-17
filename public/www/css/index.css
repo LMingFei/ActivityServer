@@ -1,0 +1,9 @@
+.list-style-2 .active{
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcc753), color-stop(1, #ec924a), color-stop(1, #ec1200));
+}
+.disabled:hover{
+    color: #a6a5ae;
+}
+.disabled{
+    color: #a6a5ae;
+}

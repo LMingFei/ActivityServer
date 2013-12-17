@@ -1,0 +1,17 @@
+%header
+  .header-left
+    %a.btn-style.btn-4(ng-tap="goto_price_list()")返回
+  竞价{{bidding_name}}{{bidder_num}}人
+  .header-right
+    %a.btn-style.btn-4(ng-tap="goto_bidding_result()")
+      列表
+.wrapper.scrollable
+  %ul.list-style-2
+    %center
+      %li(ng-repeat="bidding in bidding_classified_array | orderBy:'price'")
+        ￥{{bidding.price}}元              {{bidding.number}}人
+  %footer
+    %center
+      %div
+        %h3
+          {{winner_info}}

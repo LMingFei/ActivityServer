@@ -1,0 +1,35 @@
+%header
+  .header-left
+    %a.btn-style.btn-4(ng-tap="goto_price_list()")
+      返回
+  {{bidding_name}}{{bidder_num}}人
+  .header-right
+    %a.btn-style.btn-4(ng-tap="goto_price_statistics()")
+      统计
+.wrapper
+  .ui-content
+    %ul.list-style-2
+      %center
+        %li(ng-repeat="bidder in current_bidder_array | orderBy:'price'")
+          {{$index+1}}      {{bidder.name}}        {{bidder.phone}}     {{bidder.price}}元
+%footer
+  %center
+    %div
+      %h3
+        {{winner_info}}.
+-#pop_out_page
+
+
+
+%div(ng-class="pop_out_result" id="pop_out_result"  class="modal fade in"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" )
+  %center
+    %div(class="modal-header")
+  %button(ng-tap="close_pop()" class="close" data-dismiss="modal" aria-hidden="true" style="float:right" )X &nbsp&nbsp
+  %center
+    %div(class="modal-body" style="text-align:center;")
+      %div
+        %h4
+          {{winner_info}}
+    %div(class="modal-footer")
+      恭喜您!
+%div(class="modal-backdrop fade in" id="back_hide" ng-class="back_hide")
