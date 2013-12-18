@@ -18,14 +18,8 @@ function PriceListController($scope,$navigate,$routeParams){
         bids.unshift(new_bid);
         Bid.set_Bids(bids);
         Bid.set_current_Bid(new_bid);
-//        localStorage.setItem($routeParams.current_activity_name+"_bidding_array",JSON.stringify(current_bidding_array));
-//        localStorage.setItem("current_bidding",JSON.stringify(new_bidding));
-//        localStorage.setItem($routeParams.current_activity_name+"_"+new_bidding["name"]+"_bidder_array","[]");
         $navigate.go('/price_list_tip','slide');
     }
-
-
-
 
     $scope.btn_flag=!_.find($scope.bids,function(activity){return activity["status"]=="started"})
 

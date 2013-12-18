@@ -11,6 +11,6 @@ init_activity_database=function(){
     localStorage.current_activity=localStorage.current_activity||"";
     localStorage.current_bid=localStorage.current_bid||"";
     localStorage.sign_ups=localStorage.sign_ups||"[]";
-    localStorage.bids=localStorage.current_user_name||"[]";
+    localStorage.bids=localStorage.bids||"[]";
     localStorage.biddings=localStorage.biddings||"[]";
 }

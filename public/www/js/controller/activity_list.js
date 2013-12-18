@@ -22,7 +22,12 @@ function ActivityListController($scope,$navigate,$http){
 
 
     $scope.data_synchronous = function(){
-        $http.post("/user/data_synchronous",{name:User.get_current_user_name(),activities:Activity.get_current_activity_array(),sign_ups:Signup.get_current_Sign_ups(),bids:Bid.get_current_Bids(),biddings:Bidding.get_current_biddings()})
+        var name=User.get_current_user_name();
+        var activities=Activity.get_current_activity_array();
+        var sign_ups=Signup.get_sign_ups_of_current_user();
+        var bids=Bid.get_Bids_of_current_user();
+        var biddings=Bidding.get_Biddings_of_current_user();
+        $http.post("/user/data_synchronous",{name:name,activities:activities,sign_ups:sign_ups,bids:bids,biddings:biddings})
             .success(function(response){
                 if(JSON.parse(response)==true){
                     alert("同步数据成功")
@@ -31,7 +36,7 @@ function ActivityListController($scope,$navigate,$http){
                 {
                     alert("同步数据有误");
                 }
-            }).error(function(){
+            }).error(function(error){
                 alert("同步数据失败,请联系管理员!")
             });
     }

@@ -5,7 +5,7 @@
  * Time: 下午4:53
  * To change this template use File | Settings | File Templates.
  */
-function ActivitySignUpController($scope,$navigate){
+function ActivitySignUpController($scope,$navigate,$http){
     $scope.goto_price_list=function(){
         var current_activity=Activity.get_current_activity();
         navigate_to_price_list($navigate)
@@ -82,6 +82,7 @@ function ActivitySignUpController($scope,$navigate){
     //                    native_accessor.send_sms(mss_phone,"恭喜!报名成功");
                 $scope.signs=Signup.get_current_Sign_ups();
                 $scope.$apply($scope.signs);
+                data_synchronous($http)
                 return true;
             }
     //            native_accessor.send_sms(mss_phone,"您已报名");

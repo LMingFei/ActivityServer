@@ -37,6 +37,13 @@ Activity::Application.routes.draw do
 
   post 'user/phone_login'
 
-  post 'data_synchronous'=>"user#data_synchronous"
+  post 'user/data_synchronous'
+
+  get 'sign_up_list'=>'user#sign_up_list'
+
+  get 'bids_list'=>'user#bids_list'
+
+  get 'bidding_list'=>'user#bidding_list'
+
 
 end

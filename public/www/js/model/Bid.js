@@ -25,6 +25,13 @@ Bid.get_current_Bids=function(){
     return _.where(bids,{activity_name:Activity.get_current_activity().name,user_name:User.get_current_user_name()})||[];
 }
 
+
+Bid.get_Bids_of_current_user=function(){
+    var bids=Bid.get_Bids();
+    return _.where(bids,{user_name:User.get_current_user_name()})||[];
+}
+
+
 Bid.get_current_Bid=function(){
     return JSON.parse(localStorage.current_bid)
 }

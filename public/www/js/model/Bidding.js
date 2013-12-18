@@ -28,3 +28,10 @@ Bidding.get_current_biddings=function(){
     var biddings=Bidding.get_Biddings();
     return _.where(biddings,{activity_name:Activity.get_current_activity().name,user_name:User.get_current_user_name(),bid_name:Bid.get_current_Bid().name})||[]
 }
+
+
+
+Bidding.get_Biddings_of_current_user=function(){
+    var biddings=Bidding.get_Biddings();
+    return _.where(biddings,{user_name:User.get_current_user_name()})||[]
+}

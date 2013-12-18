@@ -1,0 +1,8 @@
+=render :partial => "layouts/crubs_nav",:locals => {:field=>'报名列表'}
+%fieldset(style="margin:50px 50px")
+  %legend
+    报名列表
+    .text-right(style="font-size:14px")
+      =link_to "竞价列表",bids_list_path(:name=>params[:name])
+    =render :partial => "show_sign_ups"
+=render :partial => 'layouts/will_paginate',:locals => {:array=> @sign_ups}

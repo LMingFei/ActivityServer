@@ -1,0 +1,7 @@
+=render :partial => "layouts/crubs_nav",:locals => {:field=>'竞价结果'}
+.text-center
+  123
+%fieldset(style="margin:50px 50px")
+  %legend
+    =render :partial => "show_biddings"
+=render :partial => 'layouts/will_paginate',:locals => {:array=> @biddings}

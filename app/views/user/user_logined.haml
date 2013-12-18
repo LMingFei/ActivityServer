@@ -1,6 +1,7 @@
+=render :partial => "layouts/crubs_nav",:locals => {:field=>nil}
+%fieldset(style="margin:50px 50px")
+  %legend
+    活动信息
+    =render :partial => "show_activity"
+=render :partial => 'layouts/will_paginate',:locals => {:array=>@activities}
 
-
-.text-center
-  %h4
-    =current_user.name
-    进来了

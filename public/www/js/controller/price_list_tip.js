@@ -5,7 +5,7 @@
  * Time: 下午4:58
  * To change this template use File | Settings | File Templates.
  */
-function PriceListTipController($scope,$navigate,$routeParams){
+function PriceListTipController($scope,$navigate,$http){
     $scope.current_bidder_array=Bidding.get_current_biddings();
 
 
@@ -46,6 +46,7 @@ function PriceListTipController($scope,$navigate,$routeParams){
                 Bidding.set_Biddings(biddings)
                 $scope.current_bidder_array=Bidding.get_current_biddings();
                 $scope.$apply($scope.current_bidder_array);
+                data_synchronous($http)
                 return true;
             }
             else{
