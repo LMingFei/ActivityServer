@@ -49,16 +49,6 @@ class UserController < ApplicationController
     end
   end
 
-  def user_logined
-    unless IsAdmin?
-      @title='用户登录界面'
-      @activities=Activities.where(:user_name=>current_user.name).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||Activities.new
-      @count=0
-    else
-      redirect_to '/manager_logined'
-    end
-  end
-
   def logout
     flash[:notice]="用户"+current_user.name+"已退出"
     User.logout!(session)
@@ -75,6 +65,27 @@ class UserController < ApplicationController
         f.json {render :json=> false}
       end
     end
+  end
+
+  def user_logined
+    unless IsAdmin?
+      @title='用户登录界面'
+      @activities=Activities.where(:user_name=>current_user.name).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||Activities.new
+      @count=0
+      @active_bid=Bids.where(:user_name=>current_user.name,:status=>"started").first
+    else
+      redirect_to '/manager_logined'
+    end
+  end
+
+  def synchronous_show
+    @count=0
+    @active_bid=Bids.where(:user_name=>current_user.name,:activity_name=>params[:activity_name]).order(:updated_at).first
+    @active_bid
+    @biddings=Biddings.where(:bid_name=>@active_bid.name,:user_name=>current_user.name,:activity_name=>@active_bid.activity_name)
+    @biddings_length=@biddings.length
+    @sign_ups_length=SignUps.where(:activity_name=>@active_bid.activity_name,:user_name=>current_user.name).length;
+    @winner=@biddings.where(:phone=>@active_bid.winner_phone).first
   end
 
   def data_synchronous
@@ -95,7 +106,6 @@ class UserController < ApplicationController
       end
     end
   end
-
 
  def sign_up_list
    @sign_ups=SignUps.where(:user_name=>current_user.name,:activity_name=>params[:name]).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||SignUps.new

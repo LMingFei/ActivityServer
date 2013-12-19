@@ -1,8 +1,9 @@
 =render :partial => "layouts/crubs_nav",:locals => {:field=>nil}
-%fieldset(style="margin:50px 50px")
+-if @active_bid
+  %div(class="text-right")
+    =button_to "数据同步",synchronous_show_path(:activity_name=>@active_bid.activity_name)
+%fieldset
   %legend
     活动信息
-    %a.btn
-
   =render :partial => "show_activity"
 =render :partial => 'layouts/will_paginate',:locals => {:array=>@activities}

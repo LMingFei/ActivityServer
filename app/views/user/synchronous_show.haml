@@ -1,0 +1,41 @@
+%meta(http-equiv="refresh" content="2")
+%center
+  %h3
+    ="活动："
+    =@active_bid.activity_name
+  -if @active_bid.status=="started"
+    %h3
+      ='参与人数'
+      =@biddings_length
+      ='/'
+      =@sign_ups_length
+  -if @active_bid.status=="end"&&@winner
+    %h3
+      ="获胜姓名："
+      =@winner.name
+    %h3
+      ="出价"
+      =@winner.price
+    %h3
+      ="手机号"
+      =@winner.phone
+  -if !@winner&&@active_bid.status=="end"
+    ="没有获胜者"
+  -if @active_bid.status=="started"
+    %table(class="table table-hover" style="margin-top:0px" )
+      %tr
+        %td
+          编号
+        %td
+          姓名
+        %td
+          手机号
+      -@biddings.each do |bidding|
+        %tr
+          %td
+            =@count+=1
+          %td
+            =bidding.name
+          %td
+            =bidding.phone
+

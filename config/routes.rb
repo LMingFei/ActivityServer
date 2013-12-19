@@ -45,4 +45,7 @@ Activity::Application.routes.draw do
 
   get 'bidding_list'=>'user#bidding_list'
 
+  get 'synchronous_show'=>'user#synchronous_show'
+  post 'synchronous_show'=>'user#synchronous_show'
+
 end
