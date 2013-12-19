@@ -18,5 +18,7 @@
         %a
           报名
       %li
-        %a(ng-Tap = "goto_price_list()" )
+        %a(ng-Tap ="goto_price_list()" ng-hide="bids_disable()")
+          竞价
+        %a(ng-show="bids_disable()")
           竞价

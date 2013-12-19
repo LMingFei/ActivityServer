@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
 
  */
-function CreateActivityController($scope,$navigate){
+function CreateActivityController($scope,$navigate,$http){
     $scope.VerificationOfEmpty=function (){
         $scope.btn_flag=!($scope.input_name==undefined||$scope.input_name=="");
     }
@@ -20,6 +20,7 @@ function CreateActivityController($scope,$navigate){
                 activity_array.unshift(new_activity);
                 Activity.set_activity_array(activity_array);
                 Activity.set_current_activity(new_activity);
+                data_synchronous($http)
                 navigate_to_activity_sign_up($navigate)
             }
             }

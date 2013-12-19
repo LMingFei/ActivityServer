@@ -1,6 +1,6 @@
 =render :partial => "layouts/crubs_nav",:locals => {:field=>'竞价结果'}
 .text-center
-  123
+  =render :partial => 'user/show_winner_info'
 %fieldset(style="margin:50px 50px")
   %legend
     =render :partial => "show_biddings"

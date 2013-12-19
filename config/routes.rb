@@ -45,5 +45,4 @@ Activity::Application.routes.draw do
 
   get 'bidding_list'=>'user#bidding_list'
 
-
 end

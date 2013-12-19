@@ -17,12 +17,12 @@ myModule.config(function($routeProvider) {
         }).when("/bidding_result", {
             templateUrl: "pages/bidding_result.html",
             controller: BiddingResultController
-        }).when("/price_statistics", {
-            templateUrl: "pages/price_statistics.html",
-            controller: PriceStatisticsController
         }).when("/phone_login", {
             templateUrl: "pages/phone_login.html",
             controller: PhoneLoginController
+        }).when("/price_statistics",{
+            templateUrl:"pages/price_statistics.html",
+            controller:PriceStatisticsController
         }).otherwise({
             redirectTo: "/phone_login"
         });

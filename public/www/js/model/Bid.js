@@ -10,6 +10,7 @@ function Bid(name){
     this.status='started';
     this.activity_name=Activity.get_current_activity().name;
     this.user_name=User.get_current_user_name();
+    this.winner_phone='{}'
 }
 
 Bid.get_Bids=function(){

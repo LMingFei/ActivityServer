@@ -21,8 +21,10 @@ function PriceListTipController($scope,$navigate,$http){
             _.each(bids,function(bid){
                 if(bid.name==current_bid.name){
                     bid["status"]="end";
+                    bid.winner_phone=Analyse_Bidder_Result($scope.current_bidder_array).phone;
                     Bid.set_current_Bid(current_bid);
                     Bid.set_Bids(bids)
+                    data_synchronous($http)
                     $navigate.go('/bidding_result','slide');
                 }
             })

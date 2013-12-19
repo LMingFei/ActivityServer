@@ -97,21 +97,35 @@ class UserController < ApplicationController
   end
 
 
-
  def sign_up_list
    @sign_ups=SignUps.where(:user_name=>current_user.name,:activity_name=>params[:name]).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||SignUps.new
    @count=0
+   if params[:page]
+     @count=Integer(((Integer(params[:page])-1)*PER_PAGE_COUNT))
+     end
  end
 
  def bids_list
   @bids=Bids.where(:user_name=>current_user.name,:activity_name=>params[:name]).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||Bids.new
   @count=0
- end
+  if params[:page]
+    @count=Integer(((Integer(params[:page])-1)*PER_PAGE_COUNT))
+  end
+  end
 
  def bidding_list
    @biddings=Biddings.where(:user_name=>current_user.name,:activity_name=>params[:activity_name],:bid_name=>params[:bid_name]).order("created_at").paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||Biddings.new
    @count=0;
-   @
+   if params[:page]
+     @count=Integer(((Integer(params[:page])-1)*PER_PAGE_COUNT))
+     end
+   @biddings_classified=@biddings.group(:price).paginate(page:params[:page],:per_page=>PER_PAGE_COUNT)||Biddings.new;
+   @biddings_classified.each do |bidding|
+     bidding[:name]=@biddings.where(:price=>bidding.price).length
+   end
+   current_bid=Bids.where(:activity_name=>params[:activity_name],:user_name=>current_user.name,:name=>params[:bid_name]).first
+   @winner=@biddings.find_by_phone(current_bid.winner_phone);
+   @status=current_bid.status
  end
 
 private

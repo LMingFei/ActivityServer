@@ -23,6 +23,14 @@ function ActivitySignUpController($scope,$navigate,$http){
         }
     }
 
+    $scope.bids_disable=function(){
+        if(Activity.get_current_activity().status=="un_start"){
+            return true
+        }
+        else{
+            return false
+        }
+    }
     $scope.btn_show=function(){
         var current_activity = Activity.get_current_activity();
         var judge_status={
@@ -36,7 +44,7 @@ function ActivitySignUpController($scope,$navigate,$http){
     $scope.activity_start=function(){
         var current_activity=Activity.get_current_activity();
         var activity_array=Activity.get_activity_array();
-        if(_.find(activity_array,function(activity){return activity.status=="started"})!=undefined){
+        if(validate_is_bid()||validate_is_sign()){
             alert("Sorry,尚有正在进行到活动.");
             return false;
         }
@@ -45,6 +53,7 @@ function ActivitySignUpController($scope,$navigate,$http){
             _.find(activity_array,function(activity){return activity.name==current_activity.name}).status="started";
             Activity.set_activity_array(activity_array);
             Activity.set_current_activity(current_activity);
+            data_synchronous($http)
         }
     }
 
@@ -56,8 +65,8 @@ function ActivitySignUpController($scope,$navigate,$http){
             _.find(activity_array,function(activity){return activity.name==current_activity.name}).status="end";
             Activity.set_activity_array(activity_array);
             Activity.set_current_activity(current_activity);
-
             navigate_to_price_list($navigate)
+            data_synchronous($http)
         }
     }
 

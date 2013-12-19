@@ -14,11 +14,10 @@ function ActivityListController($scope,$navigate,$http){
 
     $scope.goto_detail_activity=function(activity){
         Activity.set_current_activity(activity);
-//        localStorage.setItem("current_activity",JSON.stringify(activity));
         navigate_to_activity_sign_up($navigate)
     }
 
-    $scope.btn_disable_flag=!_.find($scope.activity_array,function(activity){return activity.status == "started"});
+    $scope.btn_disable_flag=!validate_is_sign();
 
 
     $scope.data_synchronous = function(){

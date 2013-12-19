@@ -1,0 +1,13 @@
+-if (@status=="end")
+  -if @winner
+    %h4
+      ='获胜者:'+@winner.name
+    %h4
+      ='出价:'+@winner.price
+    %h4
+      ='手机号:'+@winner.phone
+  -else
+    ="没有胜出者"
+-else
+  %h3
+    ="活动正在进行中"

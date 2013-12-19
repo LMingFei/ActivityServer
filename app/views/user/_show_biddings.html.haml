@@ -1,9 +1,9 @@
 %center
-  %ul(class="nav nav-tabs" id="myTab")
-    %li(class="active" style="width:50%")
-      %a(href="#home" data-toggle="tab")
+  %ul(class="nav nav-tabs" id="myTab" style="font-size:16px;background:#ddd" )
+    %li(class="active" style="width:50%;font-size:16px;background:#ddd")
+      %a(href="#home" data-toggle="tab" )
         出价列表
-    %li(style="width:50%")
+    %li(style="width:50%" style="width:50%;font-size:16px;background:#ddd")
       %a(href="#profile" data-toggle="tab" )
         竞价统计
   %div(class="tab-content")
@@ -15,7 +15,7 @@
           %td
             姓名
           %td
-            价格/元
+            出价
           %td
             手机号
         -@biddings.each do |bidding|
@@ -35,10 +35,9 @@
             价格/元
           %td
             人数
-        -#%tbody(style="text-align:center")
-        -#  - @bid_statistics.each do |bid_statistic|
-        -#    %tr
-        -#      %td
-        -#        = bid_statistic.price
-        -#      %td
-        -#        = bid_statistic.price_number
+        -@biddings_classified.each do|bidding|
+          %tr
+            %td
+              =bidding.price
+            %td
+              =bidding.name
