@@ -49,7 +49,7 @@ class ManagerController < ApplicationController
       if @user.save
         format.html {redirect_to manager_logined_path(:page=>1)}
       else
-        format.html { render action: '/add_user'}
+        format.html { render action:'/add_user'}
       end
     end
   end
@@ -72,7 +72,7 @@ class ManagerController < ApplicationController
       if @user.update(password:@user.password)
         format.html { redirect_to manager_logined_path(:page=>1)}
       else
-        format.html { render action: '/edit_user'}
+        format.html { render action:'/edit_user'}
       end
     end
   end

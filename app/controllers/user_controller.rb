@@ -44,7 +44,7 @@ class UserController < ApplicationController
         format.html { redirect_to '/user_logined'}
       else
         @user.clear_password!
-        format.html { render action: '/register'}
+        format.html { render action:'/register'}
       end
     end
   end

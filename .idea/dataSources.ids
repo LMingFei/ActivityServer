@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="f4d3a880-906e-44a3-87dd-8eceec89ac13">
-    <synchronize>true</synchronize>
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite://$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
-    <libraries>
-      <library>
-        <url>file://$PROJECT_DIR$/../Ruby/Server/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
-      </library>
-    </libraries>
+  <data-source source="LOCAL" name="SQLite -party_bid" uuid="e4b77704-ece0-4646-a12f-a9e43d43afcb">
+    <database-info product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
     <schema name="" catalog=""/>
     <table name="activities" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>

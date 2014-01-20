@@ -71,7 +71,7 @@ class ForgotController < ApplicationController
           @user.login!(session)
           format.html { redirect_to '/user_logined'}
         else
-          format.html { render action: '/forgot3'}
+          format.html { render action:'/forgot3'}
         end
       end
     else
